@@ -1,0 +1,50 @@
+* {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    display: none;
+}
+
+title {
+    display: none;
+}
+
+body {
+    background-color: #ccc;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+nav {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    border: 3px solid black;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 20%;
+    height: 1200px;
+}
+
+
+
+.blog-post {
+    flex-direction: column;
+    border: 3px solid black;
+    padding: 15px;
+    background-color: #fff;
+    width: 40%;
+    height: auto;
+  }
+
+  table, tr {
+    flex-direction: column;
+  }
+
+  table, tr, th {
+    flex-direction: row;
+  }
