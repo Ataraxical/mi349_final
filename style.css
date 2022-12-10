@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
-  background-color: 	#967259;
-  color: #ece0d1;
+  background-color: 	#25C0C0;
+  color: #F3BC50;
 }
 
 
@@ -21,10 +20,12 @@ body {
   width: 100%;
   top: 0;
   transition: background 0.5s;
+  margin-bottom: 100px;
 }
 
 #menu #logo img {
-  height: 70px;
+  margin-left: 20px;
+  height: 65%;
   transition: height 0.5s;
   padding-top: 10px;
 }
@@ -34,7 +35,8 @@ nav {
   align-items: center;
 }
 
-h1 {
+#menu h1 {
+  margin-left: 25%;
   display: flex;
   align-items: center;
 }
@@ -49,60 +51,67 @@ h1 {
 
 #menu ul li a{
   text-decoration: none;
-  color: #262626;
+  color: #F3BC50;
   background-size: cover;
   background-position: center center;
 }
 
+
 /*
-* {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-h1 {
-    display: none;
-}
-
-title {
-    display: none;
-}
-
-body {
-    background-color: #ccc;
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-  }
-
-  
-nav {
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    border: 3px solid black;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    width: 20%;
-    height: 1200px;
-}
+  Basic idea from https://www.w3schools.com/howto/howto_css_product_card.asp, heavily modified
 */
 
+.products-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-.blog-post {
-    flex-direction: column;
-    border: 3px solid black;
-    padding: 15px;
-    background-color: #fff;
-    width: 40%;
-    height: auto;
-  }
+.products {
+  display: flex;
+  justify-content: center;
+}
 
-  table, tr {
-    flex-direction: column;
-  }
+.card {
+  display: flex;
+  border-radius: 15%;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: -4px 4px 20px 0 rgba(0, 0, 0, 1);
+  max-width: 300px;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+}
 
-  table, tr, th {
-    flex-direction: row;
-  }
+.card img {
+  padding: 5px;
+}
+.card h1 {
+  align-self: center;
+}
+
+.price {
+  color: #FC8BC0;
+  font-size: 22px;
+}
+
+.card button {
+  background-color: #FC8BC0;
+  padding: 8px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  transition: ease-in-out .3s;
+}
+
+#top-row {
+  margin-top: 100px;
+}
